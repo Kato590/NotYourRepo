@@ -40,24 +40,7 @@ Time spent: **30** hours spent in total
   - [ ] Steps to recreate: 
   - [ ] Affected source code:
     - [Link 1](https://core.trac.wordpress.org/browser/tags/version/src/source_file.php)
-1. (Optional) Vulnerability Name or ID
-  - [ ] Summary: 
-    - Vulnerability types:
-    - Tested in version:
-    - Fixed in version: 
-  - [ ] GIF Walkthrough: 
-  - [ ] Steps to recreate: 
-  - [ ] Affected source code:
-    - [Link 1](https://core.trac.wordpress.org/browser/tags/version/src/source_file.php)
-1. (Optional) Vulnerability Name or ID
-  - [ ] Summary: 
-    - Vulnerability types:
-    - Tested in version:
-    - Fixed in version: 
-  - [ ] GIF Walkthrough: 
-  - [ ] Steps to recreate: 
-  - [ ] Affected source code:
-    - [Link 1](https://core.trac.wordpress.org/browser/tags/version/src/source_file.php) 
+
 
 ## Assets
 
@@ -73,7 +56,7 @@ GIFs created with [LiceCap](http://www.cockos.com/licecap/).
 
 ## Notes
 
-Since there was no clear and solid explanation on how to set up the envinroment for Week 7 on a Windows host machine, it took me more than 10 hours to just set it up. Please don't assume every student has a Linux or Mac OS host computers. It was totally unfair.
+Since there was no clear and solid explanation on how to set up the envinroment for Week 7 on a Windows host machine, it took me more than 10 hours to just set it up. I hope no one assumes every student has a Linux or Mac OS host computers. It was totally unfair.
 
 
 ## License
