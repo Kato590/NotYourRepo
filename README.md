@@ -1,20 +1,25 @@
 # Project 7 - WordPress Pentesting
 
-Time spent: **X** hours spent in total
+Time spent: **30** hours spent in total
 
 > Objective: Find, analyze, recreate, and document **five vulnerabilities** affecting an old version of WordPress
 
 ## Pentesting Report
 
-1. (Required) Vulnerability Name or ID
+1. (Required) Exploit Using XSS 
   - [ ] Summary: 
-    - Vulnerability types:
-    - Tested in version:
+  This exploit is using XSS. You have to enter a malcious comment with more than 62kb in size. After that, log in as the admin and click on or move the mouse over the comment, depending on which XSS method you use. Then, you the attacker can access the backdoor.
+  But My Virtual machine was acting up and could not access the backdoor. 
+    - Vulnerability types: 
+    XSS
+    - Tested in version: 
+    4.2
     - Fixed in version: 
   - [ ] GIF Walkthrough: 
-  ![]()
+  ![GIF](https://giphy.com/gifs/1mgnbgjGX5bsAR2c2R)
   - [ ] Steps to recreate: 
-  >sdjkshkjfdskh `<a title='x onmouseover=alert(unescape(/hello%20world/.source)) style=position:absolute;left:0;top:0;width:5000px;height:5000px  AAAAAAAAAAAA...[64 kb]..AAA'></a>`
+  >Enter a comment like the following: `<a title='x onmouseover=alert(unescape(/hello%20world/.source)) style=position:absolute;left:0;top:0;width:5000px;height:5000px  AAAAAAAAAAAA...[64 kb]..AAA'></a>`
+  (It has to have more than 65,000 characters.)
   - [ ] Affected source code:
     - [Link 1](https://core.trac.wordpress.org/browser/tags/version/src/source_file.php)
 1. (Required) Vulnerability Name or ID
@@ -56,10 +61,11 @@ Time spent: **X** hours spent in total
 
 ## Assets
 
-List any additional assets, such as scripts or files
 
 ## Resources
-
+- [WordPress 4.2 - Persistent Cross-Site Scripting](https://www.exploit-db.com/exploits/36844/)
+- [GIPHY](https://giphy.com/)
+- [YouTube](https://www.youtube.com/watch?v=OCqQZJZ1Ie4)
 - [WordPress Source Browser](https://core.trac.wordpress.org/browser/)
 - [WordPress Developer Reference](https://developer.wordpress.org/reference/)
 
@@ -67,7 +73,8 @@ GIFs created with [LiceCap](http://www.cockos.com/licecap/).
 
 ## Notes
 
-Describe any challenges encountered while doing the work
+Since there was no clear and solid explanation on how to set up the envinroment for Week 7 on a Windows host machine, it took me more than 10 hours to just set it up. Please don't assume every student has a Linux or Mac OS host computers. It was totally unfair.
+
 
 ## License
 
