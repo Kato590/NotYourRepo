@@ -5,7 +5,6 @@ Time spent: **30** hours spent in total
 > Objective: Find, analyze, recreate, and document **five vulnerabilities** affecting an old version of WordPress
 
 ## Pentesting Report
-
 1. (Required) Exploit Using XSS 
   - [ ] Summary: 
   This exploit is using XSS. You have to enter a malcious comment with more than 62kb in size. After that, log in as the admin and click on or move the mouse over the comment, depending on which XSS method you use. Then, you the attacker can access the backdoor.
@@ -16,21 +15,24 @@ Time spent: **30** hours spent in total
     4.2
     - Fixed in version: 
   - [ ] GIF Walkthrough: 
-  [GIF](https://media.giphy.com/media/1mgnbgjGX5bsAR2c2R/giphy.gif)
+  [GIF1](https://media.giphy.com/media/1mgnbgjGX5bsAR2c2R/giphy.gif)
   - [ ] Steps to recreate: 
   >Enter a comment like the following: `<a title='x onmouseover=alert(unescape(/hello%20world/.source)) style=position:absolute;left:0;top:0;width:5000px;height:5000px  AAAAAAAAAAAA...[64 kb]..AAA'></a>`
   (It has to have more than 65,000 characters.)
   - [ ] Affected source code:
     - [Link 1](https://core.trac.wordpress.org/browser/tags/version/src/source_file.php)
-1. (Required) Vulnerability Name or ID
-  - [ ] Summary: 
-    - Vulnerability types:
-    - Tested in version:
-    - Fixed in version: 
+    
+2. (Required) DoS Attack
+  - [ ] Summary: This exploit is using DoS attack. Beucase WordPress did not have a proper rule for load.scripts.php in the past, the attack was feasible.
+    - Vulnerability types:DoS Attack
+    - Tested in version:4.2
+    - Fixed in version: N/A
   - [ ] GIF Walkthrough: 
-  - [ ] Steps to recreate: 
-  - [ ] Affected source code:
-1. (Required) Vulnerability Name or ID
+  [GIF2] (https://media.giphy.com/media/31UHoR6j879d9jQ9sd/giphy.gif)
+  - [ ] Steps to recreate: Captured a GET request after logged in as the admin. Then edit the packet adding malcious codes, and sent it to the server. And it was successful.
+
+  
+3. (Required) Vulnerability Name or ID
   - [ ] Summary: 
     - Vulnerability types:
     - Tested in version:
