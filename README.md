@@ -1,6 +1,6 @@
 # Project 7 - WordPress Pentesting
 
-Time spent: **30** hours spent in total
+Time spent: **33** hours spent in total
 
 > Objective: Find, analyze, recreate, and document **five vulnerabilities** affecting an old version of WordPress
 
@@ -28,20 +28,18 @@ Time spent: **30** hours spent in total
     - Tested in version:4.2
     - Fixed in version: N/A
   - [ ] GIF Walkthrough: 
-  [GIF2] (https://media.giphy.com/media/31UHoR6j879d9jQ9sd/giphy.gif)
+  - [GIF2] (https://media.giphy.com/media/31UHoR6j879d9jQ9sd/giphy.gif)
   - [ ] Steps to recreate: Captured a GET request after logged in as the admin. Then edit the packet adding malcious codes, and sent it to the server. And it was successful.
 
   
-3. (Required) Vulnerability Name or ID
-  - [ ] Summary: 
-    - Vulnerability types:
-    - Tested in version:
-    - Fixed in version: 
-  - [ ] GIF Walkthrough: 
-  - [ ] Steps to recreate: 
-  - [ ] Affected source code:
-    - [Link 1](https://core.trac.wordpress.org/browser/tags/version/src/source_file.php)
-
+3. (Required) SSRF
+  - [ ] Summary 
+    - Vulnerability types: Server side request forgery 
+    - Tested in version:4.2
+    - Fixed in version: 4.2.7
+  - [ ] GIF Walkthrough:  
+  - [GIR3] (https://media.giphy.com/media/g4ICj7926rEUtf0Pk8/giphy.gif)
+  - [ ] Steps to recreate: Create an HTML file including the malcious code and publish it on your Word Press account and see the post and click the picture you attached to the post. Lastly, you will see malicious packets on your Wireshark
 
 ## Assets
 
